@@ -36,11 +36,44 @@
     #hero1 {
         background-color: rgba(250, 249, 247, 0.829);
         border-radius: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #name{
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    #name:hover{
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(36, 36, 41, 0.786);
     }
 
     #about{
-        background-color: rgb(185, 163, 106);
+        background-color: rgb(207, 148, 148);
         border-radius: 50px;
+        margin: 30px;
+    }
+
+    .abt-img{
+        border-radius: 50px;
+    }
+
+    #edu {
+        background-color: rgb(207, 148, 148);
+        border-radius: 30px;
+        margin: 30px;
+    }
+    .exp-cont{
+        /* background-color: rgb(216, 197, 197); */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+
+    #abouttext{
+        background-color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 20px;
+        
     }
 
 </style>
@@ -100,11 +133,11 @@
     <div id="hero" class="container hero px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-lg-6 text-center">
-                <img src="images/dev4.jpg" height="300px">
+                <img id="name" src="images/dev3.png" width="400px" height="300px">
             </div>
             <div id="hero1" class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Raju Prajapati</h1>
-                <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">Web Developer</h4>
+                <h1  class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Raju Prajapati</h1>
+                <h4  class="display-7 fw-bold text-body-emphasis lh-1 mb-3">Web Developer</h4>
                 <p class="lead">
                     Hi, I'm Raju Prajapati, a passionate web developer who enjoys building responsive, user-friendly
                     websites using HTML, CSS, JavaScript, and Bootstrap. I love turning ideas into interactive digital
@@ -132,11 +165,11 @@
         <h1 class="display-5 fw-bold text-body-emphasis" style="margin-left: 550px;">About Myself</h1>
         <div class="row">
 
-            <div class="col-5">
+            <div class="col-4">
 
-                <img src="images/heroImage.jpg" class="img-fluid" alt="Bootstrap Themes" width="60%"  loading="lazy">
+                <img src="images/heroImage.jpg" class="img-fluid abt-img" alt="Bootstrap Themes" width="100%"  loading="lazy">
             </div>
-            <div class="col-7">
+            <div id="abouttext" class="col-8">
 
                 <p class="lead mb-4">Hello! I’m Raju Prajapati, a passionate and frontend-focused web developer with a
                     strong
@@ -177,8 +210,8 @@
         <h1 class="display-5 fw-bold text-body-emphasis">Experience</h1>
         <div class=" flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
             <div class="list-group">
-                <a class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                    <div class="d-flex gap-2 w-100 justify-content-between">
+                <a class="list-group-item d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between exp-cont">
                         <div>
                             <h3 class="mb-0">Railway UFSBI </h3>
                             <p class="mb-0">As a railway signaling professional working with the Universal Fail-Safe
@@ -190,12 +223,12 @@
                                 with other signaling equipment. My role is crucial in minimizing human error, enhancing
                                 train control efficiency, and maintaining uninterrupted railway operations across
                                 high-density traffic zones.</p>
-                        </div> <small class="opacity-50 text-nowrap">2022 - 2024</small>
+                        </div> <small class="text-nowrap">2022 - 2024</small>
                     </div>
                 </a>
 
-                <a class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                    <div class="d-flex gap-2 w-100 justify-content-between">
+                <a class="list-group-item  d-flex gap-3 py-3" aria-current="true">
+                    <div class="d-flex gap-2 w-100 justify-content-between exp-cont">
                         <div>
                             <h3 class="mb-0">Railway IPS</h3>
                             <p class="mb-0">As an IPS officer serving in the Railway sector, I ensure the safety and
@@ -206,7 +239,7 @@
                                 supervise personnel, and collaborate with intelligence and local police agencies to
                                 ensure seamless travel and public safety. My work is mission-driven, requiring
                                 vigilance, leadership, and quick decision-making in high-pressure situations.</p>
-                        </div> <small class="opacity-50 text-nowrap">2020 - 2022</small>
+                        </div> <small class="text-nowrap">2020 - 2022</small>
                     </div>
                 </a>
             </div>
