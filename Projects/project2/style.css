@@ -1,0 +1,12 @@
+.hello {
+    color: brown;
+}
+
+.hi {
+    color: blueviolet;
+}
+
+td {
+    border: 1px solid black;
+    border-color: red;
+}

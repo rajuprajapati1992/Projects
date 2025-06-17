@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* border: 1px solid red; */
+    margin:0;
+    padding: 0;
+}
+ul {
+    background-color: green;
+    list-style-type: none;
+    overflow: auto; 
+    margin-left: auto;
+}
+
+li {
+    color: white;
+    padding: 10px 15px;
+    float: left;
+
+}
+
+.cover{
+    margin: 10px;
+}
+
+#heding{
+    text-align: center;
+}
+.float-img {
+    border: 2px solid green;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    
+}
+
+#img1 {
+    float: right;
+}
+
+#img2 {
+    float: left;
+
+}
+#image{
+    border-radius: 8px;
+}
+.logo{
+    height: 25px;
+    width: 25px ;
+}
+
+.first, .second{
+    height: 300px;
+    margin: 30px;
+}
+.img-text{
+    margin: 5px;
+
+}

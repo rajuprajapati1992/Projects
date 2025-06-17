@@ -1,0 +1,31 @@
+/* li{
+    color: red;
+} */
+/* #list2{
+    color: red;
+} */
+ /* .list5{
+    color: red;
+ } */
+  /* pseudo for anchor tag */
+  /* a:hover{
+    color: red;
+  } */
+   /* pseudo element */
+   /* p::first-line{
+    color: red;
+   } */
+    /* attribute selector */
+    /* a[ href="https://www.google.com"]{
+        color: red;
+    } */
+     /* *{
+        border: 1px solid red;
+     } */
+      /* +(just after anchor tag),~(after) */
+      /* div ~ a{
+        color: red;
+      } */
+       h1, p{
+        color: red;
+       }

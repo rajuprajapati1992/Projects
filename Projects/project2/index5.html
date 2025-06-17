@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element selector */
+        div {
+            background-color: rgb(0, 26, 255);
+        }
+
+        /*class selector */
+        .red {
+            background-color: green;
+        }
+
+        /* id selector */
+        #green {
+            background-color: rgb(255, 0, 0);
+        }
+
+        /* child selector */
+        div>p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* pseudo selector */
+        a:link {
+            color: black;
+        }
+
+        a:active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        I am a web developer
+        <p> i am a in side web developer</p>
+    </div>
+
+    <div id="green">
+        hello herry
+    </div>
+    <a href="http://www.google.com">Go To Google</a>
+    <a href="http://www.Facebook2.com">Go To Facebook</a>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLI Registration Form</title>
+    <link rel="stylesheet" href="registrationform.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration</header>
+        <form action="#">
+            <div class="Form first" id="first">
+                <div class="Personal Details">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter Your Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date Of Birth</label>
+                            <input type="date" placeholder="Enter Date of birth" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter Your Email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter Mobile Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <!-- <label>Gender</label> -->
+                            <!-- <input type="select" placeholder="Enter your Gender" required> -->
+                             <label for="id">Gender</label>
+                            <select id="gender" name="gender" required >
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="transgender">Transgender</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter Your Occupation" required>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div class="Details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <!-- <label>ID Type</label> -->
+                            <!-- <input type="text" placeholder="Enter ID Type" required> -->
+                            <label for="id">ID Type</label>
+                            <select id="id" name="id" required >
+                                <option value="">Select ID</option>
+                                <option value="aadhar">Aadhar card</option>
+                                <option value="pancard">Pan card</option>
+                                <option value="votercard">Voter card</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" placeholder="Enter ID number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued Authority</label>
+                            <input type="text" placeholder="Enter issued authority" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued State</label>
+                            <input type="text" placeholder="Enter issued state" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued Date</label>
+                            <input type="date" placeholder="Enter issued date " required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Expiry Date</label>
+                            <input type="date" placeholder="Enter expiry date" required>
+                        </div>
+
+
+                    </div>
+
+                    <button class="nextBtn" onclick="next()">
+                        <span class="btnText">Next</span>
+                        <!-- <i class="uil uil-navigator"></i> -->
+                    </button>
+                </div>
+            </div>
+
+            <div class="Form second" style="display: none;" id="second">
+                <div class="Details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <input type="text" placeholder="Enter address type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <!-- <label>Nationality</label>
+                            <input type="text" placeholder="Enter nNationality" required> -->
+                             <label for="id">Nationality</label>
+                            <select id="Nationality" name="Nationality" required >
+                                <option value="">Select Nationality</option>
+                                <option value="india">India</option>
+                                <option value="usa">USA</option>
+                                <option value="britain">Britain</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <!-- <label>State</label>
+                            <input type="text" placeholder="Enter your state" required> -->
+                            <label for="id">State</label>
+                            <select id="State" name="State" required >
+                                <option value="">Select State</option>
+                                <option value="madhya pradesh">Madhya pradesh</option>
+                                <option value="uttar pradesh">Uttar Pradesh</option>
+                                <option value="maharashtra">Maharashtra</option>
+                            </select>
+                        </div>
+
+
+                        <div class="input-field">
+                            <!-- <label>District</label>
+                            <input type="text" placeholder="Enter your district" required> -->
+                            <label for="id">District</label>
+                            <select id="Distric" name="Distric" required >
+                                <option value="">Select Distric</option>
+                                <option value="anuppur">Anuppur</option>
+                                <option value="Shahdol">Shahdol</option>
+                                <option value="umaria">Umaria</option>
+                                <option value="rewa">Rewa</option>
+                                <option value="satna">Satna</option>
+                                <option value="bhopal">Bhopal</option>
+                                <option value="indor">Indor</option>
+                                <option value="gwalior">Gwalior</option>
+                                <option value="jabalpur">Jabalpur</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Block Number</label>
+                            <input type="number" placeholder="Enter block number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ward NUmber</label>
+                            <input type="number" placeholder="Enter ward number" required>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div class="Details Family">
+                    <span class="title">Family Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father Name</label>
+                            <input type="text" placeholder="Enter father name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother name</label>
+                            <input type="text" placeholder="Enter mother name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Grand Father Name</label>
+                            <input type="text" placeholder="Enter grand father name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Spouse Name</label>
+                            <input type="text" placeholder="Enter spouse name " required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Father In Low</label>
+                            <input type="text" placeholder="Father in low" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mother In Low</label>
+                            <input type="text" placeholder="mother in low" required>
+                        </div>
+
+
+                    </div>
+                    <div class="buttons">
+
+                        <button class="backBtn" onclick="back()">
+                            <span class="btnText">Back</span>
+
+                        </button>
+                        <button class="submitBtn">
+                            <span class="submitText">Submit</span>
+
+                        </button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+    <script src="registrationform.js"></script>
+</body>
+
+</html>

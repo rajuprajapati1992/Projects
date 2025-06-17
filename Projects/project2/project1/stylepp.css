@@ -1,0 +1,46 @@
+ul {
+    background-color: red;
+    list-style-type: none;
+    overflow: auto;
+
+}
+#heading{
+    text-align: center;
+    
+}
+.logo{
+    height: 20px;
+    width: 20px ;
+}
+/* li {
+    
+    float: left;
+
+} */
+#list {
+    color: white;
+    padding: 10px 15px;
+    float: left;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    
+}
+.first{
+    /* display: flex; */
+    float: left;
+    color: black;
+    padding: 10px 15px;
+}
+
+table,th,td {
+
+    border: 1px solid;
+    /* margin-left: 300px; */
+   
+}
+#table{
+    position: relative;
+    top: 100px;
+    left: 200px;
+}

@@ -1,0 +1,11 @@
+ul{
+list-style-type: disc;
+list-style-position: inside;
+}
+ol{
+list-style-type: lower-alpha;
+list-style-position: inside;
+}
+li{
+    border: 1px solid black;
+}

@@ -1,0 +1,63 @@
+
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100%;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 236, 236) ;
+    background-size: cover;
+}
+
+.calculater{
+    border: 5px solid rgb(244, 234, 216);
+    padding: 20px;
+    border-radius: 16px;
+    background-color: black;
+    box-shadow: 0px 3px 15px rgb(8, 8, 8);
+}
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: rgb(174, 163, 144);
+    box-shadow: 0px 3px 15px brown;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: rgb(12, 13, 14);
+    border: solid 2px rgba(rgb(60, 47, 47), rgb(60, 84, 60), rgb(75, 75, 126), alpha);
+    border-radius: 16px;
+}
+
+input::placeholder{
+    color: rgb(15, 1, 1);
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: rgb(54, 38, 38);
+    color: rgb(241, 244, 247);
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgb(from color r g b);
+    cursor: pointer;
+}
+
+.equaBtn{
+    background-color: orange;
+}
+
+.operator{
+    color: orange;
+}

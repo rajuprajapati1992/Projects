@@ -1,0 +1,25 @@
+p::first-line {
+    font-size: 35px;
+    color: red;
+}
+
+#img1 {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 7px;
+    margin-right: 2px;
+
+}
+
+
+
+
+h1::after {
+    content: " added after";
+}
+
+::selection {
+    color: green;
+    background: yellow;
+}
