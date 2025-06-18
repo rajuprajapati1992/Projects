@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F4F6;
+    font-family: 'Lato', sans-serif;
+    color: #1A1A40;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #1A1A40;
+}
+
+.edu_img:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+    border-radius: 12px;
+}
+
+.skill_img {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 10px;
+}
+
+.skill_img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(36, 36, 41, 0.2);
+}
+
+#hero1,
+#skills {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#name {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 10px;
+}
+
+#name:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(36, 36, 41, 0.3);
+}
+
+#about,
+#cont {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.abt-img {
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#edu {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.exp-cont {
+    font-family: 'Lato', sans-serif;
+}
+
+#exp {
+    background-color: #c9c9c94a;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#exp h3 {
+    color: #0a008b;
+}
+
+#abouttext {
+    background-color: #F8F9FA;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #6A0DAD;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #5a0ca3;
+    color: #FFD700;
+}
+
+.dropdown-menu {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+}
+
+.dropdown-item:hover {
+    background-color: #F8F9FA;
+    color: #6A0DAD;
+}
+
+.card-header {
+    background-color: #cbcbe1;
+    color: #FFD700;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+}
+
+label {
+    font-weight: 600;
+    color: #1A1A40;
+}
+
+input.form-control,
+textarea.form-control {
+    border-radius: 10px;
+    border: 1px solid #DDD;
+    padding: 10px;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    border-color: #6A0DAD;
+    box-shadow: 0 0 0 0.2rem rgba(106, 13, 173, 0.2);
+}
